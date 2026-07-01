@@ -2,6 +2,7 @@ import tkinter as tk
 import os
 from colorama import Back
 
+#Sorry, still dont know how to bring this properly. Please copy paste this in your repositary.
 
 def append_s(n):
     return n+"s"
