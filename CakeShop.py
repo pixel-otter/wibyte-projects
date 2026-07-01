@@ -1,5 +1,6 @@
 import tkinter as tk
 import os
+from colorama import Back
 
 
 def append_s(n):
@@ -31,7 +32,7 @@ masterDict["Special Structure"] = ["None", "Town", "Stadium", "Aquarium", "Prair
 
 Order = ["Flavor", "Icing", "Filling", 0, 0, 0, "Special Structure", 0, 0]
 
-#I did not have the time to create 30 cakes so that is where you SHOULD use AI
+#I did not have the time to create 150 cakes so that is where you SHOULD use AI
 Encoded = [
     [3,6,3,1,2,15,3,60],   # Classic Strawberry Dream
     [7,4,5,2,3,20,1,66],   # Royal Blueberry Wonder
@@ -184,6 +185,7 @@ Encoded = [
     [1,3,5,4,2,35,4,113],   # Sunny Vanilla Splendor
     [2,5,6,5,3,40,2,119],   # Frosted Chocolate Crown
 ]
+
 n_cakes = len(Encoded)
 for i in range(n_cakes):
     for j in range(len(Encoded[i])):
@@ -376,12 +378,23 @@ def check_selection():
     for i in keys:
         print(pad(i, maxlen), end = "\t")
     print("\n")
+    x = 0
     for i in full:
+        q = x
         for j in i:
-            print(pad(i[j], maxlen), end = "\t")
+            if j == "Flavor":
+                print(f"{x + 1}.", end = "")
+            if q%2 == 0:
+                print(Back.RED + pad(i[j], maxlen), end = Back.BLACK + "\t")
+            else:
+                print(Back.YELLOW + pad(i[j], maxlen), end = Back.BLACK + "\t")
+            q += 1
+        x += 1
+
         print("\n")
     print("Please give input for cake")
-    input("1 for first cake, 2 for second, so on... remember that you can actiate a new selection, but that may run into error")
+    input("1 for first cake, 2 for second, so on... ")
+    print("Your purchase is unsucessful")
 
 
 options_flavor = []
