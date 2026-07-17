@@ -106,6 +106,7 @@ Our advanced AI system will judge your career, hobbies, and overall club suitabi
 
 
 
+Note that you may need to put the gemma 3 install, I dont know with github, ask chatgpt or somthing
 
 
 
