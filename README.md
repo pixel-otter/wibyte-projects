@@ -1,114 +1,35 @@
-# Bywite Country Club
-### Strictest Admission in the World
+# Mandelbrot and Julia sets
 
-Hello and welcome to the Bywite Country Club admissions process. We only need a few things about you: your traits, your name, your household, and your life.
+These 2 fractals do not require recursion, they instead use the mathematical function f(z) =  z<sup>2</sup> + c repeated.
 
-## Syntax
+## The Mandelbrot set 
+<img src="MandelbrotSet.png" alt="Desktop" width="20%">
+<br>
+The Mandelbrot set
+<br>
+This set is placed on the complex plane and tests all complex values for c in the f(z) =  z<sup>2</sup> + c. There is somthing called the explosion, when c > 2, it begins climbing at a dizzying rate to infinity. The set does not include that which have exploded and only colors points that have not exploded yet.
 
-You should know that we have a strict syntax at the Bywite Country Club and expect all admittees to follow it.
+You may have noticed the set is not all black, that is because the colors are added to show the number of iterations for a point to take before exploding, some points never explode so they are colored black.
 
-## Traits
+## The Julia Set set 
+<img src="JuliaSet.png" alt="Desktop" width="20%">
+<br>
+The Julia set
+<br>
+This set is also placed on the complex plane but unlike the Mandelbrot set, c is constant, a fixed point on the Mandelbrot set. Instead, it positions z at every point for f(z) =  z<sup>2</sup> + c The colors are still based on the explosion and there are different Julia sets, the one I showed you is spiral valley(-0.74434, 0.10772i) along with several other spiral valleys(-0.75, -1.1i), in between the blobs in the Mandelbrot set, it is one of the few that does really explode, here are some others:
 
-Please be honest about your traits. (The AI system will definitely know if you are lying.)
+<img src="DendriteJuliaSet.png" alt="Desktop" width="20%">
+<br>
+dendrite Julia set(0, i)
 
-Use this line to submit your traits:
+<img src="SanMarcoJuliaSet.png" alt="Desktop" width="20%">
+<br>
+San Marco Julia set(-0.75, 0i)
 
-```python
-at = alltraits(1, "Brave", "Stupid", "Lazy", "Funny", "Strong", "Energetic", "Connected", "Spiritual", "Slow")
-```
+<img src="BascilicaJuliaSet.png" alt="Desktop" width="20%">
+<br>
+Bascilica Julia set(-1, 0i)
 
-##### The given traits are examples.
-
-This is how to provide your traits. Our state-of-the-art AI system will validate them and give you a score.
-
-Type:
-
-```python
-at
-```
-
-to check your score.
-
----
-
-## Name Strength
-
-We need to make sure your name is prestigious enough.
-
-Use this format:
-
-```python
-ns = namestrength(
-    name="_____",
-    lastname="_____",
-    nickname="_____",
-    salutation="_____"
-)
-```
-
-Type:
-
-```python
-ns
-```
-
-to check your name score.
-
----
-
-## Household Items
-
-We require knowledge of your household possessions. Most importantly:
-
-- What you use for entertainment
-- Your main mode of transport
-- Your pool type
-- The best room in your house
-
-Use:
-
-```python
-hf = housefeatures(
-    Cost,
-    Entertainment="_____",
-    Transport="_____",
-    Pool="_____",
-    BestRoom="_____"
-)
-```
-
----
-
-## Your Life
-
-We need to know your profession and hobbies.
-
-Use:
-
-```python
-ls = life(
-    Profession="_____",
-    "Hobby",
-    "Hobby",
-    "Hobby",
-    "Hobby"
-)
-```
-
-You may provide as many hobbies as necessary.
-
-Our advanced AI system will judge your career, hobbies, and overall club suitability.
-
-
-
-
-
-
-
-
-Note that you may need to put the gemma 3 install, I dont know with github, ask chatgpt or somthing
-
-
-
-
-###### Just lie.
+<img src="GrandNetworkJuliaSet.png" alt="Desktop" width="20%">
+<br>
+Grand Network Julia set(0.8 + 0.156i)
