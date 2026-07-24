@@ -8,7 +8,7 @@ def enjoy_coding():
 
 coder = 0
 while True:
-  if coder = 1:
+  if coder == 1:
     enjoy_coding()
   else:
     coder = 1
